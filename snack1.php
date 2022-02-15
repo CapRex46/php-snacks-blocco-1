@@ -50,4 +50,4 @@
             <?php echo $matches[$i]["casa"] ?>-<?php echo $matches[$i]["ospiti"] ?>  | 
             <?php echo $matches[$i]["ptcas"] ?>-<?php echo $matches[$i]["ptosp"] ?> <br>           
         <?php } ?>
-</html>
+</html> s
