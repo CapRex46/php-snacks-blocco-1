@@ -39,6 +39,19 @@ $posts = [
         ]
     ],
 ];
+
+for ($i=0; $i < count ($posts); $j++) {
+    $day=array_keys($posts) [$i];
+    $postsOfDay=$posts[$day];
+    echo '<h1>'. $day. '</h1>';
+    for ($j=0; $j < count($postsOfDay); $j++){
+        echo '<div>' . $postsOfDay [$j] ['title']. '<div>';
+        echo '<div>' . $postsOfDay [$j] ['author']. '<div>';
+        echo '<div>' . $postsOfDay [$j] ['text']. '<div>';
+        echo '</br>';
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -50,6 +63,6 @@ $posts = [
     <title>Document</title>
 </head>
 <body>
-    <h1><?php echo $posts?></h1>
+
 </body>
 </html>
